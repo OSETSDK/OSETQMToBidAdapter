@@ -37,15 +37,10 @@
 - (void)showSplashAdInWindow:(UIWindow *)window parameter:(AWMParameter *)parameter {
     WindmillLogDebug(@"OSET", @"%@", NSStringFromSelector(_cmd));
     UIView *bottomView = [parameter.extra objectForKey:AWMAdLoadingParamSPCustomBottomView];
-    self.splashAd.bottomView = bottomView;
-    if(window){
-        self.splashAd.window = window;
-    }else{
-        self.splashAd.window = [UIApplication sharedApplication].keyWindow;
+    if(!window){
+        window =[UIApplication sharedApplication].keyWindow;
     }
-    [self.splashAd showSplashAd];
-    
-
+    [self.splashAd showSplashAdWithWindow:window bottomView:bottomView];
 }
 - (void)didReceiveBidResult:(AWMMediaBidResult *)result {
     if (result.win) {
