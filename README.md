@@ -1,2 +1,2 @@
-# OSETQMToBidAdapter
-OSETQMToBidAdapter
+# OSETCoreToBidAdapter
+OSETCoreToBidAdapter
