@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                     OSETSDK 是一个专业的广告聚合SDK，提供高效的广告展示和收益优化功能。
                     DESC
-  s.homepage     = "https://github.com/OSETSDK/OSETCoreToBidAdapter"
+  s.homepage     = "https://github.com/OSETSDK/OSETQMToBidAdapter"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { 'shenshi' => 'yaohaofei@shenshiads.com' }
   
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
     :tag => s.version.to_s
   }
   # 主框架文件
-  # 检查 OSETToBidAdapter.podspec 关键字段
+  # 检查 OSETQMToBidAdapter.podspec 关键字段
   s.source_files = 'OSETQMToBidAdapter/**/*.{h,m}'
   # 系统框架依赖
   s.frameworks = "Foundation", "UIKit"
